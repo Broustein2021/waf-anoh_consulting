@@ -53,8 +53,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color-scheme: light;
-    overflow-x: hidden;
-    overflow-x: clip;
   }
 
   body {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { NAV } from "@/lib/site";
@@ -79,8 +79,19 @@ export function SiteHeader() {
             Prendre rendez-vous
           </Button>
           <Button
+            size="icon"
+            className="hidden max-[379px]:inline-flex"
+            onClick={() => {
+              setOpen(false);
+              goToContact();
+            }}
+            aria-label="Contactez-nous"
+          >
+            <Phone className="size-4" />
+          </Button>
+          <Button
             size="sm"
-            className="sm:hidden"
+            className="hidden min-[380px]:inline-flex sm:hidden"
             onClick={() => {
               setOpen(false);
               goToContact();

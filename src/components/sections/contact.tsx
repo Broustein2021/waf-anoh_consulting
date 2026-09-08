@@ -46,7 +46,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="bg-bg-elevated py-20 sm:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
-        <Reveal className="lg:col-span-2">
+        <Reveal className="min-w-0 lg:col-span-2">
           <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
             Contactez-nous
           </p>
@@ -90,7 +90,7 @@ export function ContactSection() {
           </ul>
         </Reveal>
 
-        <Reveal className="lg:col-span-3" delayMs={80}>
+        <Reveal className="min-w-0 lg:col-span-3" delayMs={80}>
           <div className="rounded-3xl bg-bg p-6 shadow-card sm:p-8">
             {sent ? (
               <div className="flex min-h-80 flex-col items-center justify-center text-center">
@@ -103,12 +103,12 @@ export function ContactSection() {
                 </p>
               </div>
             ) : (
-              <form className="grid gap-4 sm:grid-cols-2" onSubmit={onSubmit}>
-                <div className="grid gap-1.5 sm:col-span-1">
+              <form className="grid min-w-0 gap-4 sm:grid-cols-2" onSubmit={onSubmit}>
+                <div className="grid min-w-0 gap-1.5 sm:col-span-1">
                   <Label htmlFor="contact-name">Nom complet</Label>
                   <Input id="contact-name" name="name" autoComplete="name" required />
                 </div>
-                <div className="grid gap-1.5">
+                <div className="grid min-w-0 gap-1.5">
                   <Label htmlFor="contact-phone">Téléphone</Label>
                   <Input
                     id="contact-phone"
@@ -119,7 +119,7 @@ export function ContactSection() {
                     required
                   />
                 </div>
-                <div className="grid gap-1.5 sm:col-span-2">
+                <div className="grid min-w-0 gap-1.5 sm:col-span-2">
                   <Label htmlFor="contact-email">E-mail</Label>
                   <Input
                     id="contact-email"
@@ -129,7 +129,7 @@ export function ContactSection() {
                     required
                   />
                 </div>
-                <div className="grid gap-1.5 sm:col-span-2">
+                <div className="grid min-w-0 gap-1.5 sm:col-span-2">
                   <Label htmlFor="contact-service">Service souhaité</Label>
                   <select
                     id="contact-service"
@@ -149,7 +149,7 @@ export function ContactSection() {
                     ))}
                   </select>
                 </div>
-                <div className="grid gap-1.5 sm:col-span-2">
+                <div className="grid min-w-0 gap-1.5 sm:col-span-2">
                   <Label htmlFor="contact-message">Message</Label>
                   <Textarea
                     id="contact-message"
@@ -157,7 +157,7 @@ export function ContactSection() {
                     placeholder="Quelques mots sur votre entreprise et votre besoin…"
                   />
                 </div>
-                <div className="sm:col-span-2">
+                <div className="min-w-0 sm:col-span-2">
                   <Button type="submit" size="lg" className="w-full sm:w-auto">
                     Envoyer la demande sur WhatsApp
                   </Button>
