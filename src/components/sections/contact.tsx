@@ -97,24 +97,10 @@ export function ContactSection() {
                 <CheckCircle2 className="size-12 text-accent" strokeWidth={1.6} />
                 <h3 className="mt-4 text-2xl font-semibold text-navy">Merci !</h3>
                 <p className="mt-2 max-w-sm text-muted">
-                  Votre demande est bien prise en compte. Un membre de l'équipe
-                  vous contactera pour confirmer un rendez-vous.
+                  WhatsApp s'est ouvert avec votre demande complète. Il ne reste
+                  qu'à appuyer sur « Envoyer » dans WhatsApp pour nous la
+                  transmettre — nous vous répondons très vite.
                 </p>
-                <Button
-                  className="mt-6"
-                  variant="whatsapp"
-                  asChild
-                >
-                  <a
-                    href={whatsappHref(
-                      `Bonjour ${SITE.name}, je viens d'envoyer une demande de rendez-vous sur votre site.`,
-                    )}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Continuer sur WhatsApp
-                  </a>
-                </Button>
               </div>
             ) : (
               <form className="grid gap-4 sm:grid-cols-2" onSubmit={onSubmit}>
