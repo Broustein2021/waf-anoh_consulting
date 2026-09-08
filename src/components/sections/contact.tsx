@@ -14,7 +14,6 @@ export function ContactSection() {
   const service = useContactIntent((s) => s.service);
   const setService = useContactIntent((s) => s.setService);
   const [sent, setSent] = useState(false);
-  const [pending, setPending] = useState(false);
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -23,16 +22,25 @@ export function ContactSection() {
     const name = String(data.get("name") ?? "").trim();
     const phone = String(data.get("phone") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
     if (name.length < 2 || phone.length < 8 || !email.includes("@")) {
       toast.error("Veuillez renseigner votre nom, votre téléphone et un e-mail valide.");
       return;
     }
-    setPending(true);
-    window.setTimeout(() => {
-      setPending(false);
-      setSent(true);
-      toast.success("Demande reçue ! Nous vous recontactons très vite.");
-    }, 500);
+    const lines = [
+      `Bonjour ${SITE.name},`,
+      "",
+      "Je souhaite obtenir des informations sur vos prestations :",
+      "",
+      `Nom : ${name}`,
+      `Téléphone : ${phone}`,
+      `E-mail : ${email}`,
+      `Service souhaité : ${service || "Pour en discuter"}`,
+    ];
+    if (message) lines.push(`Message : ${message}`);
+    window.open(whatsappHref(lines.join("\n")), "_blank", "noopener,noreferrer");
+    setSent(true);
+    toast.success("Votre message s'ouvre dans WhatsApp — appuyez sur Envoyer pour nous le transmettre.");
   }
 
   return (
@@ -164,8 +172,8 @@ export function ContactSection() {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={pending}>
-                    {pending ? "Envoi en cours…" : "Envoyer la demande"}
+                  <Button type="submit" size="lg" className="w-full sm:w-auto">
+                    Envoyer la demande sur WhatsApp
                   </Button>
                 </div>
               </form>
