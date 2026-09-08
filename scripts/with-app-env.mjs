@@ -111,7 +111,10 @@ function main(argv) {
     process.exit(2);
   }
   const env = mergeAppEnv(readAppEnv(projectRoot()), process.env);
-  const child = spawn(command, args, { stdio: "inherit", env });
+  // Windows cannot `spawn()` a `.cmd` shim directly (vite, prettier, … are
+  // `.cmd` under npm); run through the shell there. POSIX keeps shell disabled.
+  const shell = process.platform === "win32";
+  const child = spawn(command, args, { stdio: "inherit", env, shell });
   // The dev server is long-running and is stopped by signalling this wrapper.
   for (const signal of ["SIGINT", "SIGTERM", "SIGHUP"]) {
     process.on(signal, () => child.kill(signal));
