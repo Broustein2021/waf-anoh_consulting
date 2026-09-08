@@ -21,7 +21,7 @@ function Home() {
         href="#home"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-fg"
       >
-        Skip to content
+        Aller au contenu
       </a>
       <SiteHeader />
       <main>

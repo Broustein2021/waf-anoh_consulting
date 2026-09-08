@@ -11,7 +11,7 @@ export function HeroSection() {
     >
       <img
         src="/images/hero.jpg"
-        alt="WAF & ANOH CONSULTING team in a client meeting"
+        alt="Équipe WAF & ANOH CONSULTING en réunion avec un client"
         className="absolute inset-0 size-full object-cover object-[68%_center]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/88 to-navy/25 max-md:via-navy/80 max-md:to-navy/45" />
@@ -57,19 +57,19 @@ export function HeroSection() {
           className="hero-enter mt-5 max-w-lg text-base leading-relaxed text-navy-muted sm:text-lg"
           style={{ animationDelay: "200ms" }}
         >
-          Accounting follow-up, taxation, business management and social welfare
-          (CNPS) — handled with rigor, so you can build with peace of mind.
+          Suivi comptable, fiscalité, gestion d'entreprise et protection sociale
+          (CNPS) — traités avec rigueur, pour bâtir votre activité en toute sérénité.
         </p>
         <div
           className="hero-enter mt-8 flex flex-wrap items-center gap-3"
           style={{ animationDelay: "280ms" }}
         >
           <Button size="lg" onClick={() => goToContact()}>
-            Book an appointment
+            Prendre rendez-vous
             <ArrowRight />
           </Button>
           <Button size="lg" variant="ghost" asChild>
-            <a href="#services">Explore our services</a>
+            <a href="#services">Découvrir nos services</a>
           </Button>
         </div>
         <p
@@ -77,7 +77,7 @@ export function HeroSection() {
           style={{ animationDelay: "340ms" }}
         >
           <ShieldCheck className="size-4 shrink-0 text-accent" />
-          Multidisciplinary team · CNPS-compliant · FNE-ready
+          Équipe pluridisciplinaire · Conforme CNPS · Prêt pour la FNE
         </p>
       </div>
     </section>

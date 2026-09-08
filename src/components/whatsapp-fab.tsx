@@ -1,4 +1,4 @@
-import { SITE, whatsappHref } from "@/lib/site";
+import { whatsappHref } from "@/lib/site";
 
 function WhatsAppGlyph({ className }: { className?: string }) {
   return (
@@ -12,11 +12,11 @@ export function WhatsAppFab() {
   return (
     <a
       href={whatsappHref(
-        `Hello ${SITE.name}, I would like to book an appointment.`,
+        "Bonjour, je viens de votre site et je souhaiterais avoir de plus amples informations sur vos prestations.",
       )}
       target="_blank"
       rel="noreferrer"
-      aria-label="Chat on WhatsApp"
+      aria-label="Discuter sur WhatsApp"
       className="fixed right-4 bottom-4 z-30 flex size-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-fg shadow-float transition-transform duration-150 hover:scale-105 active:scale-95 sm:right-6 sm:bottom-6"
     >
       <WhatsAppGlyph className="size-7" />

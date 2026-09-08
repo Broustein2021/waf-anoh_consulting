@@ -24,14 +24,14 @@ export function ContactSection() {
     const phone = String(data.get("phone") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     if (name.length < 2 || phone.length < 8 || !email.includes("@")) {
-      toast.error("Please complete your name, phone and a valid email.");
+      toast.error("Veuillez renseigner votre nom, votre téléphone et un e-mail valide.");
       return;
     }
     setPending(true);
     window.setTimeout(() => {
       setPending(false);
       setSent(true);
-      toast.success("Request received. We will get back to you shortly.");
+      toast.success("Demande reçue ! Nous vous recontactons très vite.");
     }, 500);
   }
 
@@ -40,15 +40,15 @@ export function ContactSection() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
         <Reveal className="lg:col-span-2">
           <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
-            Contact us
+            Contactez-nous
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">
-            Book an appointment
+            Prendre rendez-vous
           </h2>
           <p className="mt-4 text-muted">
-            Tell us where you are with the company. We will come back with a
-            clear next step — often the same day, always on WhatsApp if you
-            prefer.
+            Dites-nous où en est votre entreprise. Nous revenons vers vous avec
+            une prochaine étape claire — souvent le jour même, toujours sur
+            WhatsApp si vous préférez.
           </p>
 
           <ul className="mt-8 space-y-4 text-sm">
@@ -87,10 +87,10 @@ export function ContactSection() {
             {sent ? (
               <div className="flex min-h-80 flex-col items-center justify-center text-center">
                 <CheckCircle2 className="size-12 text-accent" strokeWidth={1.6} />
-                <h3 className="mt-4 text-2xl font-semibold text-navy">Thank you</h3>
+                <h3 className="mt-4 text-2xl font-semibold text-navy">Merci !</h3>
                 <p className="mt-2 max-w-sm text-muted">
-                  Your request is in. A member of the team will contact you to
-                  confirm a time.
+                  Votre demande est bien prise en compte. Un membre de l'équipe
+                  vous contactera pour confirmer un rendez-vous.
                 </p>
                 <Button
                   className="mt-6"
@@ -99,23 +99,23 @@ export function ContactSection() {
                 >
                   <a
                     href={whatsappHref(
-                      `Hello ${SITE.name}, I just sent an appointment request.`,
+                      `Bonjour ${SITE.name}, je viens d'envoyer une demande de rendez-vous sur votre site.`,
                     )}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Continue on WhatsApp
+                    Continuer sur WhatsApp
                   </a>
                 </Button>
               </div>
             ) : (
               <form className="grid gap-4 sm:grid-cols-2" onSubmit={onSubmit}>
                 <div className="grid gap-1.5 sm:col-span-1">
-                  <Label htmlFor="contact-name">Full name</Label>
+                  <Label htmlFor="contact-name">Nom complet</Label>
                   <Input id="contact-name" name="name" autoComplete="name" required />
                 </div>
                 <div className="grid gap-1.5">
-                  <Label htmlFor="contact-phone">Phone</Label>
+                  <Label htmlFor="contact-phone">Téléphone</Label>
                   <Input
                     id="contact-phone"
                     name="phone"
@@ -126,7 +126,7 @@ export function ContactSection() {
                   />
                 </div>
                 <div className="grid gap-1.5 sm:col-span-2">
-                  <Label htmlFor="contact-email">Email</Label>
+                  <Label htmlFor="contact-email">E-mail</Label>
                   <Input
                     id="contact-email"
                     name="email"
@@ -136,7 +136,7 @@ export function ContactSection() {
                   />
                 </div>
                 <div className="grid gap-1.5 sm:col-span-2">
-                  <Label htmlFor="contact-service">Service of interest</Label>
+                  <Label htmlFor="contact-service">Service souhaité</Label>
                   <select
                     id="contact-service"
                     name="service"
@@ -147,7 +147,7 @@ export function ContactSection() {
                       "transition-[box-shadow] duration-150 focus-visible:shadow-[0_0_0_2px_var(--color-accent)]",
                     )}
                   >
-                    <option value="">Select a service</option>
+                    <option value="">Choisissez un service…</option>
                     {SERVICES.map((s) => (
                       <option key={s} value={s}>
                         {s}
@@ -160,12 +160,12 @@ export function ContactSection() {
                   <Textarea
                     id="contact-message"
                     name="message"
-                    placeholder="A few words about your company and what you need…"
+                    placeholder="Quelques mots sur votre entreprise et votre besoin…"
                   />
                 </div>
                 <div className="sm:col-span-2">
                   <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={pending}>
-                    {pending ? "Sending…" : "Send request"}
+                    {pending ? "Envoi en cours…" : "Envoyer la demande"}
                   </Button>
                 </div>
               </form>

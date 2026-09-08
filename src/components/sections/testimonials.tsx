@@ -3,23 +3,23 @@ import { Reveal } from "@/components/reveal";
 const TESTIMONIALS = [
   {
     quote:
-      "They handled our DFE and the monthly accounts from the first week. I finally spend my time on sales, not paperwork.",
+      "Ils ont géré notre DFE et la comptabilité mensuelle dès la première semaine. Je consacre enfin mon temps à la vente, pas à la paperasse.",
     name: "Aya Kouassi",
-    role: "Founder, Kouassi Trading",
+    role: "Fondatrice, Kouassi Trading",
     photo: "/images/testimonial-1.jpg",
   },
   {
     quote:
-      "Payroll, CNPS, tax — one team, one WhatsApp thread. Reliable, close, and they never miss a deadline.",
+      "Paie, CNPS, fiscalité — une équipe, un fil WhatsApp. Sérieux, proches, et ils ne manquent jamais une échéance.",
     name: "Jean-Marc Yao",
-    role: "Manager, BTP Horizon",
+    role: "Gérant, BTP Horizon",
     photo: "/images/testimonial-2.jpg",
   },
   {
     quote:
-      "The FNE training was clear and practical. We were ready before the deadline, without the usual panic.",
+      "La formation FNE était claire et pratique. Nous étions prêts avant l'échéance, sans la panique habituelle.",
     name: "Mariam Traoré",
-    role: "Director, Clinique Ananeraie",
+    role: "Directrice, Clinique Ananeraie",
     photo: "/images/testimonial-3.jpg",
   },
 ];
@@ -30,10 +30,10 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
-            Clients
+            Témoignages
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">
-            What our clients say
+            Ce que disent nos clients
           </h2>
         </Reveal>
 

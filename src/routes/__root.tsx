@@ -5,7 +5,7 @@ import appCss from "../styles.css?url";
 
 const APP_NAME = "WAF & ANOH CONSULTING";
 const APP_DESCRIPTION =
-  "WAF & ANOH CONSULTING — Expertise within your reach. Accounting, taxation, business management and CNPS in Abidjan.";
+  "WAF & ANOH CONSULTING — Expertise à votre portée. Comptabilité, fiscalité, gestion d'entreprise et CNPS à Abidjan.";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -38,7 +38,7 @@ export const Route = createRootRoute({
 
 function RootDocument() {
   return (
-    <html lang="en" className="antialiased" suppressHydrationWarning>
+    <html lang="fr" className="antialiased" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>

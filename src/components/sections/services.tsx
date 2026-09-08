@@ -5,23 +5,23 @@ import { goToContact } from "@/lib/contact-intent";
 
 const CORE = [
   {
-    title: "Accounting follow-up",
-    body: "Day-to-day bookkeeping, journals and monthly closing, so you always know where the company stands.",
+    title: "Suivi comptable",
+    body: "Tenue des journaux, saisie quotidienne et clôture mensuelle, pour toujours savoir où en est l'entreprise.",
     icon: BookOpen,
   },
   {
-    title: "Taxation",
-    body: "Declarations, filings and a lawful reading of your tax position — no surprises at deadline.",
+    title: "Fiscalité",
+    body: "Déclarations, formalités et lecture légale de votre position fiscale — pas de surprise à l'échéance.",
     icon: Landmark,
   },
   {
-    title: "Business management",
-    body: "Cash-flow visibility, dashboards and advice to steer the company with a cooler head.",
+    title: "Gestion d'entreprise",
+    body: "Visibilité sur la trésorerie, tableaux de bord et conseils pour piloter l'entreprise avec plus de sérénité.",
     icon: LineChart,
   },
   {
-    title: "Social welfare (CNPS)",
-    body: "Registration, contributions and employee files kept compliant with CNPS rules.",
+    title: "Protection sociale (CNPS)",
+    body: "Immatriculations, cotisations et dossiers du personnel tenus conformes aux règles de la CNPS.",
     icon: Shield,
   },
 ];
@@ -40,14 +40,14 @@ export function ServicesSection() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
-            What we do
+            Ce que nous faisons
           </p>
           <h2 className="mt-3 max-w-lg text-3xl font-semibold text-navy sm:text-4xl">
-            Our core services
+            Nos services essentiels
           </h2>
           <p className="mt-4 max-w-2xl text-muted">
-            Four pillars for companies that want their numbers right, their
-            filings on time, and a partner who stays close.
+            Quatre piliers pour les entreprises qui veulent des chiffres justes,
+            des formalités en temps et un partenaire proche de vous.
           </p>
         </Reveal>
 
@@ -68,7 +68,7 @@ export function ServicesSection() {
                   className="mt-6 self-start"
                   onClick={() => goToContact(item.title)}
                 >
-                  Request this service
+                  Demander ce service
                 </Button>
               </article>
             </Reveal>

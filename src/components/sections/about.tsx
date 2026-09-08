@@ -3,20 +3,20 @@ import { Reveal } from "@/components/reveal";
 
 const COMMITMENTS = [
   {
-    title: "Rigor and professionalism",
-    body: "Every filing, statement and deadline is treated with method. Clean books, on time.",
+    title: "Rigueur & professionnalisme",
+    body: "Chaque dossier, chaque état financier et chaque échéance est traité avec méthode. Des comptes sains, dans les temps.",
     icon: Scale,
     tone: "navy" as const,
   },
   {
-    title: "Availability and closeness",
-    body: "A partner you can reach — in Yopougon and on WhatsApp — not a distant back office.",
+    title: "Disponibilité & proximité",
+    body: "Un partenaire facile à joindre — à Yopougon et sur WhatsApp — pas un back-office lointain.",
     icon: Handshake,
     tone: "accent" as const,
   },
   {
-    title: "Confidentiality and integrity",
-    body: "Your figures, your people, your plans. Handled discreetly, always.",
+    title: "Confidentialité & intégrité",
+    body: "Vos chiffres, vos équipes, vos projets. Traités avec discrétion, toujours.",
     icon: Lock,
     tone: "navy" as const,
   },
@@ -33,7 +33,7 @@ export function AboutSection() {
             <div className="relative overflow-hidden rounded-3xl bg-bg-elevated p-2 shadow-card">
               <img
                 src="/images/about.jpg"
-                alt="Consultants reviewing financial statements together"
+                alt="Consultants examinant ensemble les états financiers"
                 className="aspect-[4/3] w-full rounded-2xl object-cover outline outline-1 -outline-offset-1 outline-navy/10"
               />
             </div>
@@ -43,21 +43,21 @@ export function AboutSection() {
         <div>
           <Reveal>
             <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
-              About us
+              À propos de nous
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">
-              Expertise within your reach
+              L'expertise à votre portée
             </h2>
             <p className="mt-5 text-muted">
-              WAF & ANOH CONSULTING is an Abidjan firm built around a
-              multidisciplinary team. We help entrepreneurs and growing companies
-              keep management sound, compliant and high-performing — from the
-              first ledger to the year-end statements.
+              WAF & ANOH CONSULTING est un cabinet abidjanais bâti autour d'une
+              équipe pluridisciplinaire. Nous accompagnons les entrepreneurs et
+              les entreprises en croissance pour garder une gestion saine, conforme
+              et performante — du premier journal à la clôture d'exercice.
             </p>
             <p className="mt-3 text-muted">
-              Based in Yopougon Ananeraie, we stay close to the businesses we
-              serve: clear advice, careful filings, and a team you can actually
-              reach.
+              Installés à Yopougon Ananeraie, nous restons proches des entreprises
+              que nous servons : des conseils clairs, des dossiers soignés, et une
+              équipe réellement joignable.
             </p>
           </Reveal>
 

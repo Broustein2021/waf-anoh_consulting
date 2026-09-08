@@ -1,8 +1,8 @@
 export const SITE = {
   name: "WAF & ANOH CONSULTING",
   shortName: "WAF & ANOH",
-  tagline: "Expertise within your reach",
-  headline: "Your trusted partner for your company's performance",
+  tagline: "Expertise à votre portée",
+  headline: "Votre partenaire de confiance pour la performance de votre entreprise",
   email: "contact@waf-anohconsulting.ci",
   addressLine: "Yopougon Ananeraie, COOPEC",
   city: "Abidjan, Côte d'Ivoire",
@@ -14,22 +14,22 @@ export const SITE = {
 } as const;
 
 export const NAV = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
+  { href: "#home", label: "Accueil" },
+  { href: "#about", label: "À propos" },
   { href: "#services", label: "Services" },
-  { href: "#training", label: "Training" },
+  { href: "#training", label: "Formations" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
 export const SERVICES = [
-  "Accounting follow-up",
-  "Taxation",
-  "Business management",
-  "Social welfare (CNPS)",
-  "Business creation",
-  "FNE training",
-  "Student training",
-  "Other",
+  "Suivi comptable",
+  "Fiscalité",
+  "Gestion d'entreprise",
+  "Protection sociale (CNPS)",
+  "Création d'entreprise",
+  "Formation FNE",
+  "Stage étudiant",
+  "Autre",
 ] as const;
 
 export function whatsappHref(message?: string) {

@@ -29,8 +29,8 @@ export function QuoteSection() {
             “
           </span>
           <blockquote className="mt-2 font-display text-2xl leading-snug font-medium text-balance sm:text-3xl md:text-4xl">
-            WAF&ANOH CONSULTING puts its expertise at your service to help you
-            build, manage and grow your business with complete peace of mind
+            WAF&ANOH CONSULTING met son expertise à votre service pour vous aider
+            à bâtir, gérer et faire croître votre entreprise en toute sérénité.
           </blockquote>
         </Reveal>
       </div>

@@ -25,14 +25,15 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <Logo inverted />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-muted">
-            {SITE.tagline}. An Abidjan firm for accounting follow-up, taxation,
-            business management and CNPS — close, discreet, and exact.
+            {SITE.tagline}. Un cabinet abidjanais pour le suivi comptable, la
+            fiscalité, la gestion d'entreprise et la CNPS — proche, discret et
+            précis.
           </p>
         </div>
 
         <div>
           <h2 className="font-sans text-xs font-semibold tracking-[0.18em] text-accent uppercase">
-            Quick links
+            Liens rapides
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm">
             {NAV.map((item) => (
@@ -92,7 +93,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="relative border-t border-navy-fg/10 px-4 py-5 pb-24 text-center text-xs text-navy-muted sm:px-6 sm:pb-5">
-        © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+        © {new Date().getFullYear()} {SITE.name}. Tous droits réservés.
       </div>
     </footer>
   );

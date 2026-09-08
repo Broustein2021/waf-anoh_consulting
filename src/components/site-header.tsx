@@ -49,7 +49,7 @@ export function SiteHeader() {
           }}
         >
           <Logo compact />
-          <span className="sr-only">WAF & ANOH CONSULTING — Home</span>
+          <span className="sr-only">WAF & ANOH CONSULTING — Accueil</span>
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -76,7 +76,7 @@ export function SiteHeader() {
               goToContact();
             }}
           >
-            Book an appointment
+            Prendre rendez-vous
           </Button>
           <Button
             size="sm"
@@ -86,7 +86,7 @@ export function SiteHeader() {
               goToContact();
             }}
           >
-            Contact us
+            Contactez-nous
           </Button>
           <button
             type="button"
@@ -129,7 +129,7 @@ export function SiteHeader() {
               goToContact();
             }}
           >
-            Book an appointment
+            Prendre rendez-vous
           </Button>
         </nav>
       </div>

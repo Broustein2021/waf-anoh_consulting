@@ -11,33 +11,33 @@ import { goToContact } from "@/lib/contact-intent";
 
 const ITEMS = [
   {
-    title: "Business creation",
-    body: "From the idea to a registered company, with the right legal form and a clean start.",
+    title: "Création d'entreprise",
+    body: "De l'idée à l'entreprise immatriculée, avec la bonne forme juridique et un départ propre.",
     icon: Building2,
   },
   {
-    title: "Registration follow-up until DFE",
-    body: "We stay with the file until the Business Formation Certificate (DFE) is in your hands.",
+    title: "Suivi d'immatriculation jusqu'au DFE",
+    body: "Nous suivons le dossier jusqu'à l'obtention de votre certificat de formation d'entreprise (DFE).",
     icon: BadgeCheck,
   },
   {
-    title: "Bank loan assistance",
-    body: "A file that reads clearly for the bank: statements, forecasts and a coherent story.",
+    title: "Assistance aux crédits bancaires",
+    body: "Un dossier qui parle pour vous auprès de la banque : états financiers, prévisions et un récit cohérent.",
     icon: Landmark,
   },
   {
-    title: "Payroll preparation",
-    body: "Payslips, charges and employee records prepared carefully, month after month.",
+    title: "Établissement des fiches de paie",
+    body: "Fiches de paie, charges et dossiers du personnel préparés avec soin, mois après mois.",
     icon: Users,
   },
   {
-    title: "Financial statements",
-    body: "Statement 301-302, Balance Sheet and DISA prepared to standard, ready for filing.",
+    title: "États financiers",
+    body: "États 301-302, Bilan et DISA préparés aux normes, prêts à être déposés.",
     icon: FileSpreadsheet,
   },
   {
-    title: "Business modifications",
-    body: "Adding or removing an activity, capital increase, change of manager, and similar updates.",
+    title: "Modifications d'entreprise",
+    body: "Ajout ou retrait d'activité, augmentation de capital, changement de gérant, et autres mises à jour.",
     icon: PenLine,
   },
 ];
@@ -48,14 +48,15 @@ export function AdditionalSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <p className="font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">
-            Further support
+            Un accompagnement plus large
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">
-            Additional services
+            Services complémentaires
           </h2>
           <p className="mt-4 max-w-2xl text-muted">
-            Formalities and files that often stall a growing company — handled
-            end to end, so you can get back to the work itself.
+            Formalités et dossiers qui bloquent souvent une entreprise en
+            croissance — pris en charge de bout en bout, pour que vous puissiez
+            retourner à votre métier.
           </p>
         </Reveal>
 
