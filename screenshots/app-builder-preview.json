@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "WAF & ANOH CONSULTING",
+      "hasCanvas": false,
+      "bodyTextLen": 4722,
+      "bodyTextHash": "dc200131aa37127c71f0b447edcb770c2c093a85704e0558bfe82d78d1ef8d4c",
+      "bodyTextPrefix": "Skip to content WAF & ANOH CONSULTING WAF & ANOH CONSULTING — Ho",
+      "horizontalOverflow": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "WAF & ANOH CONSULTING",
+      "hasCanvas": false,
+      "bodyTextLen": 4722,
+      "bodyTextHash": "dc200131aa37127c71f0b447edcb770c2c093a85704e0558bfe82d78d1ef8d4c",
+      "bodyTextPrefix": "Skip to content WAF & ANOH CONSULTING WAF & ANOH CONSULTING — Ho",
+      "horizontalOverflow": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
