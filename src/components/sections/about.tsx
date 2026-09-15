@@ -4,8 +4,7 @@ import { Reveal } from "@/components/reveal";
 import { cn } from "@/lib/utils";
 
 const ABOUT_PHOTOS = [
-  { src: "/images/anoh.jpeg", alt: "Photographie du cabinet WAF & ANOH CONSULTING" },
-  { src: "/images/anoh1.jpeg", alt: "Photographie du cabinet WAF & ANOH CONSULTING" },
+  { src: "/images/cabinet.jpg", alt: "Photographie du cabinet WAF & ANOH CONSULTING" },
 ];
 
 const COMMITMENTS = [
