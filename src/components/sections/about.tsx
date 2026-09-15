@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 const ABOUT_PHOTOS = [
   { src: "/images/cabinet.jpg", alt: "Photographie du cabinet WAF & ANOH CONSULTING" },
+  { src: "/images/franck.jpg", alt: "Photographie du cabinet WAF & ANOH CONSULTING" },
 ];
 
 const COMMITMENTS = [
