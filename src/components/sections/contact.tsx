@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useContactIntent } from "@/lib/contact-intent";
-import { SERVICES, SITE, mapsUrl, whatsappHref } from "@/lib/site";
+import { MAP, SERVICES, SITE, mapsUrl, whatsappHref } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function ContactSection() {
@@ -98,6 +98,19 @@ export function ContactSection() {
               </a>
             </li>
           </ul>
+
+          <div className="mt-8 overflow-hidden rounded-3xl shadow-card">
+            <iframe
+              src={MAP.embed}
+              title="Plan d'accès au cabinet WAF & ANOH CONSULTING"
+              width="600"
+              height="450"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              className="h-64 w-full border-0 sm:h-72 lg:h-80"
+            />
+          </div>
         </Reveal>
 
         <Reveal className="min-w-0 lg:col-span-3" delayMs={80}>

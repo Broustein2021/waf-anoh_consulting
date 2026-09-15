@@ -13,6 +13,13 @@ export const SITE = {
   whatsapp: "2250768900750",
 } as const;
 
+export const MAP = {
+  latitude: 5.347077924033172,
+  longitude: -4.095725364638098,
+  embed:
+    "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d224.67913869886542!2d-4.095725364638098!3d5.347077924033172!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sci!4v1789467837343!5m2!1sfr!2sci",
+} as const;
+
 export const NAV = [
   { href: "#home", label: "Accueil" },
   { href: "#about", label: "À propos" },
@@ -39,8 +46,7 @@ export function whatsappHref(message?: string) {
 }
 
 export function mapsUrl() {
-  const query = `WAF & ANOH CONSULTING, ${SITE.addressLine}${SITE.city ? ", " + SITE.city : ""}`;
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  return `https://www.google.com/maps?q=${encodeURIComponent(`${MAP.latitude},${MAP.longitude}`)}&z=17`;
 }
 
 export function scrollToId(id: string) {
