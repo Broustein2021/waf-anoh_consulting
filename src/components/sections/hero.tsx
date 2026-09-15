@@ -10,8 +10,8 @@ export function HeroSection() {
       className="relative overflow-hidden bg-navy text-navy-fg"
     >
       <img
-        src="/images/hero.jpg"
-        alt="Équipe WAF & ANOH CONSULTING en réunion avec un client"
+        src="/images/equipe.jpg"
+        alt="Équipe WAF & ANOH CONSULTING"
         className="absolute inset-0 size-full object-cover object-[68%_center]"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/88 to-navy/25 max-md:via-navy/80 max-md:to-navy/45" />
