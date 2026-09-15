@@ -68,8 +68,8 @@ export function TrainingSection() {
             <article className="flex h-full flex-col overflow-hidden rounded-3xl bg-bg shadow-card">
               <div className="relative h-48 overflow-hidden sm:h-56">
                 <img
-                  src="/images/training.jpg"
-                  alt="Session pratique de formation en comptabilité"
+                  src="/images/equipe.jpg"
+                  alt="Équipe WAF & ANOH CONSULTING"
                   className="size-full object-cover outline outline-1 -outline-offset-1 outline-navy/10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/35 to-transparent" />
