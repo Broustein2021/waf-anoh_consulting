@@ -144,9 +144,9 @@ export function AboutSection() {
               et performante — du premier journal à la clôture d'exercice.
             </p>
             <p className="mt-3 text-muted">
-              Installés à Yopougon Ananeraie, nous restons proches des entreprises
-              que nous servons : des conseils clairs, des dossiers soignés, et une
-              équipe réellement joignable.
+              Installés à Abidjan, nous restons proches des entreprises que nous
+              servons : des conseils clairs, des dossiers soignés, et une équipe
+              réellement joignable.
             </p>
           </Reveal>
 

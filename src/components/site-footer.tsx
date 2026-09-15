@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "@/components/logo";
-import { NAV, SITE } from "@/lib/site";
+import { NAV, SITE, mapsUrl } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -65,13 +65,25 @@ export function SiteFooter() {
                 {SITE.email}
               </a>
             </li>
-            <li className="flex items-start gap-2.5">
-              <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
-              <span>
-                {SITE.addressLine}
-                <br />
-                {SITE.city}
-              </span>
+            <li>
+              <a
+                href={mapsUrl()}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Ouvrir notre adresse sur Google Maps"
+                className="group flex items-start gap-2.5"
+              >
+                <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
+                <span className="transition-colors duration-150 group-hover:text-navy-fg">
+                  {SITE.addressLine}
+                  {SITE.city ? (
+                    <>
+                      <br />
+                      {SITE.city}
+                    </>
+                  ) : null}
+                </span>
+              </a>
             </li>
           </ul>
           <div className="mt-5 flex gap-2">

@@ -4,8 +4,8 @@ export const SITE = {
   tagline: "Expertise à votre portée",
   headline: "Votre partenaire de confiance pour la performance de votre entreprise",
   email: "contact@waf-anohconsulting.ci",
-  addressLine: "Yopougon Ananeraie, COOPEC",
-  city: "Abidjan, Côte d'Ivoire",
+  addressLine: "S 394, Abidjan, 255, Abidjan, CI",
+  city: "",
   phones: [
     { display: "07 68 90 07 50", tel: "+2250768900750", digits: "0768900750" },
     { display: "07 99 14 05 74", tel: "+2250799140574", digits: "0799140574" },
@@ -36,6 +36,11 @@ export function whatsappHref(message?: string) {
   const base = `https://wa.me/${SITE.whatsapp}`;
   if (!message) return base;
   return `${base}?text=${encodeURIComponent(message)}`;
+}
+
+export function mapsUrl() {
+  const query = `WAF & ANOH CONSULTING, ${SITE.addressLine}${SITE.city ? ", " + SITE.city : ""}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
 export function scrollToId(id: string) {

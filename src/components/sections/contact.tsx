@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useContactIntent } from "@/lib/contact-intent";
-import { SERVICES, SITE, whatsappHref } from "@/lib/site";
+import { SERVICES, SITE, mapsUrl, whatsappHref } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function ContactSection() {
@@ -78,14 +78,24 @@ export function ContactSection() {
                 {SITE.email}
               </a>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="inline-flex size-10 items-center justify-center rounded-full bg-navy-soft text-navy">
-                <MapPin className="size-4" />
-              </span>
-              <span className="text-muted">
-                <span className="block font-medium text-navy">{SITE.addressLine}</span>
-                {SITE.city}
-              </span>
+            <li>
+              <a
+                href={mapsUrl()}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Ouvrir notre adresse sur Google Maps"
+                className="group flex items-start gap-3"
+              >
+                <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-navy-soft text-navy transition-colors duration-150 group-hover:bg-accent-soft group-hover:text-accent">
+                  <MapPin className="size-4" />
+                </span>
+                <span className="text-muted transition-colors duration-150 group-hover:text-navy">
+                  <span className="block font-medium text-navy underline-offset-4 transition-colors duration-150 group-hover:text-accent group-hover:underline">
+                    {SITE.addressLine}
+                  </span>
+                  {SITE.city ? <span>{SITE.city}</span> : null}
+                </span>
+              </a>
             </li>
           </ul>
         </Reveal>
